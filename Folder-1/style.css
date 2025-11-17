@@ -180,3 +180,8 @@ li:hover {
   font-weight: bold;
   color: white;
 }
+
+.photos {
+  display: grid;
+  grid-template-columns: 200px auto;
+}

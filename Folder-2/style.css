@@ -81,10 +81,6 @@ h2 {
   font-size: 40px;
 }
 
-.develop {
-  color: #bf302f;
-}
-
 p {
   font-family: "oswald";
   color: white;
@@ -151,6 +147,34 @@ p {
 .text-border:hover .hire {
   color: black;
   transition: all 0.3s ease;
+}
+
+.develop::before {
+  content: "";
+  color: #bf302f;
+  animation: words 10s infinite;
+}
+
+@keyframes words {
+  0%,
+  32% {
+    content: "Web Developer";
+  }
+
+  33%,
+  52% {
+    content: "Software Developer";
+  }
+
+  53%,
+  72% {
+    content: "Web Designer";
+  }
+
+  73%,
+  100% {
+    content: "Script Writer";
+  }
 }
 
 @media (max-width: 768px) {
